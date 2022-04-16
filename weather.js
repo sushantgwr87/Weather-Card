@@ -25,7 +25,9 @@ window.onload = function(){
       const apiKey = "76c0f72608729b50bd0a1b90110fd036";
        
       //Url 
-      const url = `https://api.openweathermap.org/data/2.5/forecast?q=${cityName}&appid=${apiKey}&cnt=5&units=metric`;
+      const url = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}&units=metric`;
+      //for forecast, use below url
+      //const url = `https://api.openweathermap.org/data/2.5/forecast?q=${cityName}&appid=${apiKey}&cnt=5&units=metric`;
       
       const  res = await fetch(url);
       const data =await res.json();
