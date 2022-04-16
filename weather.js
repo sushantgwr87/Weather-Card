@@ -29,6 +29,9 @@ window.onload = function(){
       
       const  res = await fetch(url);
       const data =await res.json();
+      
+      console.log(data);
+      
       const {
         name,weather,
         sys:{country},main:{temp}
