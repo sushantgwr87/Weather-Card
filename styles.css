@@ -104,6 +104,11 @@ h1 {
     outline: none;
 }
 
+.search_btn:hover {
+    color: var(--secondaryColor);
+    background-color: var(--tertiaryColor);
+}
+
 .info {
     color: var(--secondaryColor);
     font-weight: bold;
