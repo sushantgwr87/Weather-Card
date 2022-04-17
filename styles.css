@@ -1,86 +1,118 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-body{
-    text-align: center;
+
+:root {
+    --primaryColor: #c7351b;
+    --secondaryColor: #0f172a;
+    --tertiaryColor: #DBEAFE;
+    --hoverColor: #1883ef;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
-    background-color: #c7351b !important;
-    max-width:100vw;
-    max-height:100vh;
-    width:100%;
-    height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    position: relative;
 }
-.weather-container{
-    padding: 10px 0;
-    background-color: #efefef;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    border-radius: 3px;
-    color: #0f172a;
+
+body {
+    max-width: 100vw;
+    max-height: 100vh;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primaryColor);
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 50px;
+    color: #DBEAFE;
+}
+
+.weather_container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 400px;
-    height: 500px;
-    margin: auto;
+    padding: 10px;
+    background-color: #efefef;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    color: var(--secondaryColor);
+    width: calc(200px + 20vw);
 }
-.form{
+
+.weather_forecast {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: #efefef;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    color: var(--secondaryColor);
+    width: calc(200px + 20vw);
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
     margin: 1rem 0rem;
 }
-.input-city{
-    background-color: transparent;
-    border: 1px solid #0f172a;
-    border-radius:40px;
 
+.input_city {
+    background-color: #DBEAFE;
+    border: 1px solid #0f172a;
+    border-radius: 10px;
     color: #0f172a;
-    display: inline-block;
-    font-family: 'Montserrat', sans-serif ;
     font-weight: bold;
-    margin: 0.5rem 0rem;
-    padding:0.5rem 1rem;
+    font-size: 16px;
+    padding: 10px;
     outline: none;
 }
-.search-btn{
+
+.search_btn {
     background-color: #0f172a;
     cursor: pointer;
     border-radius: 50px;
-    border:none;
+    border: none;
     color: #DBEAFE;
     display: inline-block;
-    font-family: 'Montserrat', sans-serif ;
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     margin: 0.5rem 1rem;
-    padding: 0.5rem;
+    font-size: 20px;
+    padding: 8px 10px;
     outline: none;
 }
 
-.info{
+.info {
     color: #0f172a;
-    margin-top: 1rem;
     font-weight: bold;
 }
-.place{
- 
-    font-size: 30px;
-    
-}
-.date{
-    
-    margin-top: 0.5rem;
-   
-}
-.temp{
 
-    
+.weather_container img {
+    width: 80px;
+}
+
+.place {
+    font-size: 30px;
+}
+
+.temp {
     font-size: 42px;
-    
     margin-top: 1.5rem;
-    
 }
-.condition{
-   
-    font-size: 30px;
 
+.condition {
+    font-size: 30px;
     margin: 1.5rem 0rem;
 }
